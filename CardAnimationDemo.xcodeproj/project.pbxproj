@@ -19,6 +19,9 @@
 		9DB1570519B85096003AEE87 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB156ED19B85096003AEE87 /* UIKit.framework */; };
 		9DB1570D19B85096003AEE87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DB1570B19B85096003AEE87 /* InfoPlist.strings */; };
 		9DB1570F19B85096003AEE87 /* CardAnimationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1570E19B85096003AEE87 /* CardAnimationDemoTests.m */; };
+		9DB1571B19B850B9003AEE87 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB1571919B850B9003AEE87 /* MainViewController.m */; };
+		9DB1571C19B850B9003AEE87 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB1571A19B850B9003AEE87 /* MainViewController.xib */; };
+		9DB1571E19B851F4003AEE87 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB1571D19B851F4003AEE87 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		9DB1570A19B85096003AEE87 /* CardAnimationDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CardAnimationDemoTests-Info.plist"; sourceTree = "<group>"; };
 		9DB1570C19B85096003AEE87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9DB1570E19B85096003AEE87 /* CardAnimationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardAnimationDemoTests.m; sourceTree = "<group>"; };
+		9DB1571819B850B9003AEE87 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9DB1571919B850B9003AEE87 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9DB1571A19B850B9003AEE87 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		9DB1571D19B851F4003AEE87 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB1571E19B851F4003AEE87 /* QuartzCore.framework in Frameworks */,
 				9DB156EC19B85096003AEE87 /* CoreGraphics.framework in Frameworks */,
 				9DB156EE19B85096003AEE87 /* UIKit.framework in Frameworks */,
 				9DB156EA19B85096003AEE87 /* Foundation.framework in Frameworks */,
@@ -96,6 +104,7 @@
 		9DB156E819B85096003AEE87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9DB1571D19B851F4003AEE87 /* QuartzCore.framework */,
 				9DB156E919B85096003AEE87 /* Foundation.framework */,
 				9DB156EB19B85096003AEE87 /* CoreGraphics.framework */,
 				9DB156ED19B85096003AEE87 /* UIKit.framework */,
@@ -109,6 +118,9 @@
 			children = (
 				9DB156F819B85096003AEE87 /* AppDelegate.h */,
 				9DB156F919B85096003AEE87 /* AppDelegate.m */,
+				9DB1571819B850B9003AEE87 /* MainViewController.h */,
+				9DB1571919B850B9003AEE87 /* MainViewController.m */,
+				9DB1571A19B850B9003AEE87 /* MainViewController.xib */,
 				9DB156FB19B85096003AEE87 /* Images.xcassets */,
 				9DB156F019B85096003AEE87 /* Supporting Files */,
 			);
@@ -220,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DB156F419B85096003AEE87 /* InfoPlist.strings in Resources */,
+				9DB1571C19B850B9003AEE87 /* MainViewController.xib in Resources */,
 				9DB156FC19B85096003AEE87 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DB156FA19B85096003AEE87 /* AppDelegate.m in Sources */,
+				9DB1571B19B850B9003AEE87 /* MainViewController.m in Sources */,
 				9DB156F619B85096003AEE87 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -362,6 +376,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CardAnimationDemo/CardAnimationDemo-Prefix.pch";
 				INFOPLIST_FILE = "CardAnimationDemo/CardAnimationDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -375,6 +390,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CardAnimationDemo/CardAnimationDemo-Prefix.pch";
 				INFOPLIST_FILE = "CardAnimationDemo/CardAnimationDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -439,6 +455,7 @@
 				9DB1571419B85096003AEE87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DB1571519B85096003AEE87 /* Build configuration list for PBXNativeTarget "CardAnimationDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +464,7 @@
 				9DB1571719B85096003AEE87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
